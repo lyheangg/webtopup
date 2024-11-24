@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+/* General */
+body {
+  font-family: "Sora", sans-serif;
+}
+.body-kh {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+/* Maintain aspect ratio for the slideshow */
+.slideshow-container {
+  /*padding-top: 39.27%; /* (754 / 1920) * 100 to maintain 1920x754 ratio */
+  position: relative;
+  overflow: hidden;
+}
+.slideshow-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+@media (min-width: 640px) {
+  /* Adjust width to make it 1.3 times the box width */
+  .box {
+    flex-basis: calc(33.333% * 1.3 - 10px);
+  }
+}
+/*Footer*/
+.footer-list {
+  list-style-type: none;
+}
+.footer-list > li::before {
+  content: "\F132";
+  font-family: bootstrap-icons;
+  margin-right: 10px;
+  color: #fff;
+}
